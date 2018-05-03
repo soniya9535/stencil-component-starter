@@ -27,6 +27,107 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface ButtonComponent {
+      'name': string;
+    }
+  }
+
+  interface HTMLButtonComponentElement extends StencilComponents.ButtonComponent, HTMLStencilElement {}
+
+  var HTMLButtonComponentElement: {
+    prototype: HTMLButtonComponentElement;
+    new (): HTMLButtonComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'button-component': HTMLButtonComponentElement;
+  }
+  interface ElementTagNameMap {
+    'button-component': HTMLButtonComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'button-component': JSXElements.ButtonComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface ButtonComponentAttributes extends HTMLAttributes {
+      'name'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface FormComponent {
+      'name': string;
+    }
+  }
+
+  interface HTMLFormComponentElement extends StencilComponents.FormComponent, HTMLStencilElement {}
+
+  var HTMLFormComponentElement: {
+    prototype: HTMLFormComponentElement;
+    new (): HTMLFormComponentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'form-component': HTMLFormComponentElement;
+  }
+  interface ElementTagNameMap {
+    'form-component': HTMLFormComponentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'form-component': JSXElements.FormComponentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FormComponentAttributes extends HTMLAttributes {
+      'name'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface FormInputs {
+      'name': string;
+    }
+  }
+
+  interface HTMLFormInputsElement extends StencilComponents.FormInputs, HTMLStencilElement {}
+
+  var HTMLFormInputsElement: {
+    prototype: HTMLFormInputsElement;
+    new (): HTMLFormInputsElement;
+  };
+  interface HTMLElementTagNameMap {
+    'form-inputs': HTMLFormInputsElement;
+  }
+  interface ElementTagNameMap {
+    'form-inputs': HTMLFormInputsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'form-inputs': JSXElements.FormInputsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface FormInputsAttributes extends HTMLAttributes {
+      'name'?: string;
+      'onFirstNameEmitter'?: (event: CustomEvent) => void;
+      'onLastNameEmitter'?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface MyComponent {
       'first': string;
       'last': string;
