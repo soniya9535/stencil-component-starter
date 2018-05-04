@@ -25,7 +25,7 @@ export class FormInputs {
         <input type="text" placeholder="Your name.." onInput={(e) => this.getFirstName(e)}/>
 
         <label>Last Name</label>
-        <input type="text" placeholder="Your last name.." onInput={(e) => this.getFirstName(e)}/>
+        <input type="text" placeholder="Your last name.." onInput={(e) => this.getLastName(e)}/>
     </div>
    )
  }
