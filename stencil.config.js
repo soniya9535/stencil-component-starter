@@ -1,14 +1,10 @@
 exports.config = {
-  namespace: 'mycomponent',
-  outputTargets:[
-    { 
-      type: 'dist' 
-    },
-    { 
-      type: 'www',
-      serviceWorker: false
-    }
-  ]
+ namespace: 'mycomponent',
+ bundles: [
+ { components: ['form-component'] },
+  { components: ['form-inputs']},
+  { components: ['button-component']},
+ ]
 };
 
 exports.devServer = {
